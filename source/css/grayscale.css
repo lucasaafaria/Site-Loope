@@ -212,14 +212,19 @@
   padding: 10rem 0;
 }
 
+.projects-section h4 {
+  color: #6200eaff;
+  padding: 0.8rem;
+}
+
 .projects-section .featured-text {
-  padding: 2rem;
+  padding: 1rem;
 }
 
 @media (min-width: 992px) {
   .projects-section .featured-text {
     padding: 0 0 0 2rem;
-    border-left: 0.5rem solid #64a19d;
+    border-left: 0.5rem solid #6200eaff;
   }
 }
 
@@ -233,7 +238,7 @@
     padding: 5rem;
   }
   .projects-section .project-text hr {
-    border-color: #64a19d;
+    border-color: #6200eaff;
     border-width: .25rem;
     width: 30%;
   }
