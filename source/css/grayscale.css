@@ -176,6 +176,38 @@
   margin-bottom: 5rem;
 }
 
+.about-section h4 {
+  color: #6200eaff;
+  padding: 0.8rem;
+}
+
+.about-section .featured-text {
+  padding: 1rem;
+}
+
+@media (min-width: 992px) {
+  .about-section .featured-text {
+    padding: 2 0 0 0rem;
+    border-right: 0.5rem solid #6200eaff;
+  }
+}
+
+.about-section .project-text {
+  padding: 3rem;
+  font-size: 90%;
+}
+
+@media (min-width: 992px) {
+  .about-section .project-text {
+    padding: 5rem;
+  }
+  .about-section .project-text hr {
+    border-color: #6200eaff;
+    border-width: .25rem;
+    width: 30%;
+  }
+}
+
 .projects-section {
   padding: 10rem 0;
 }
