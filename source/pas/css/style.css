@@ -1,6 +1,9 @@
 body {
-  margin: 2em;
+  background: url(./img/texturas/textura1.JPEG);
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #000000;
 }
+
 aside {
     background: #1f8dd6; /* same color as selected state on site menu */
     padding: 0.3em 1em;
@@ -8,9 +11,49 @@ aside {
     color: #fff;
     margin-bottom: 2em;
 }
+
 textarea {
   width: 100%;
 }
+
+h1, h2, h3, h4 {
+  font-family: 'Lato', sans-serif;
+}
+
+#arte {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+
+#logo-loope {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#form {
+  margin-right: auto;
+}
+
+#proposito, #pilares, #como {
+  margin-top: 3rem;
+}
+
+#proposito .row, #pilares .row {
+  margin-top: 1.5rem;
+  padding: 0 1rem 0 1rem;
+}
+
+h2 span{
+  background-color: #26dbfd;
+  color: #FFFFFF;
+}
+
+h3 {
+  color: #26dbfd;
+}
+
 .content-head {
   font-weight: 400;
   text-transform: uppercase;
@@ -21,7 +64,7 @@ textarea {
   text-align: center;
 }
 .button-success {
-  color: white;
+  color: #424249;
   border-radius: 4px;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   background: rgb(28, 184, 65); /* this is a green */
@@ -34,4 +77,30 @@ button {
 }
 #name, #email {
   width: 50%;
+}
+
+@media (max-width: 575.98px) { 
+
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #logo-loope {
+    top: -45px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #logo-loope {
+    top: -65px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #logo-loope {
+    top: -80px;
+  }
 }
