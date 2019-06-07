@@ -44,6 +44,24 @@ h1, h2, h3, h4 {
   padding: 0 1rem 0 1rem;
 }
 
+button.to-form {
+  border: 0px;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding: .4rem 2.2rem .4rem 2.2rem;
+  border-radius: 1rem;
+  color: #FFFFFF;
+  background-image: linear-gradient(to bottom right, #2677fd, #26dbfd);
+}
+
+button.to-form:hover {
+  color: #26dbfd;
+}
+
 h2 span{
   background-color: #26dbfd;
   color: #FFFFFF;
