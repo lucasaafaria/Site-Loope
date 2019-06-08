@@ -18,6 +18,8 @@
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
 
+  <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/pure.css">
   <link rel="stylesheet" href="css/style.css">
@@ -26,69 +28,30 @@
 
 <body>
 
-  <!-- SECAO INICIAL -->
-  <section class="container">
-    <div class="row">
-      
-      <!-- ARTE -->
-      <div id="arte" class="col-md-8 col-12">
+  <!-- ARTE -->
+  <section class="container-fluid">   
+    <div id="arte" class="col-md-10 col-12">
+      <div class="row">
         <img src="img/artes/arte3.gif" class="img-fluid">
-        <div class="row">
-          <div id="logo-loope" class="col-md-5 col-6">
-            <img src="../images/Horizontal---Preferencial.png" class="img-fluid">  
-          </div>
+        <div class="row col-12">
+            <div id="logo-loope" class="col-md-3 col-6">
+              <img src="../images/Horizontal---Preferencial.png" class="img-fluid">  
+            </div>
         </div>
       </div>
-
-      <!-- FORM -->
-      <!-- <div id="form" class="col-md-3">
-        <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net" action="https://script.google.com/a/loope.bsb.br/macros/s/AKfycbzmdYWh9APCL-NKR7ba2U008SCYyR2pd3JNuhoa/exec">
-
-          <div class="form-elements">
-            <fieldset class="pure-group">
-              <label for="name">Name: </label>
-              <input id="name" name="name" placeholder="What your Mom calls you" />
-            </fieldset>
-
-            <fieldset class="pure-group">
-              <label for="message">Message: </label>
-              <textarea id="message" name="message" rows="10"
-              placeholder="Tell us what's on your mind..."></textarea>
-            </fieldset>
-
-            <fieldset class="pure-group">
-              <label for="email"><em>Your</em> Email Address:</label>
-              <input id="email" name="email" type="email" value=""
-              required placeholder="your.name@email.com"/>
-              <span class="email-invalid" style="display:none">
-                Must be a valid email address</span>
-            </fieldset>
-
-
-            <button>
-              Send</button>
-          </div>
-
-          <div class="thankyou_message" style="display:none;">
-            <h2><em>Thanks</em> for contacting us!
-              We will get back to you soon!</h2>
-          </div>
-
-        </form> -->
-      </div> 
     </div>
-  </section> <!-- FIM SECAO INICIAL -->
+  </section> <!-- FIM ARTE -->
 
   <!-- PROPOSITO -->  
   <section id="proposito" class="container text-center">
-    <h2><span style="background-color: #2677fd">P R O P Ó S I T O</span></h2>
+    <h2><span>P R O P Ó S I T O</span></h2>
     <img src="img/icones/proposito.gif" alt="propósito Loope" class="img-fluid col-md-4 col-6">
-    <div class="row">
-      <p>Os estudantes de hoje possuem desafios e necessidades diferentes daqueles que fizeram o PAS há alguns anos, mas a maior parte dos cursinhos não mudou a metodologia.</p>
-      <p> Num contexto em que a concorrência por uma vaga está cada vez mais qualificada, somente passar conteúdo não é mais suficiente. Detalhes como inteligência emocional, saúde, planejamento e metodologias de estudo passam a fazer diferença.</p>
-      <p>Isso motivou a criação do Projeto PAS. Por meio deste curso, buscamos propor uma aprendizagem personalizada para que os estudantes alcancem os seus objetivos de uma maneira mais inteligente e humana.</p>
+    <div id="texto-proposito" class="row col-md-8">
+      <p>Com atividades cada vez mais dinâmicas e informação mais difundida nos diversos canais de comunicação, a concorrência para a Universidade está cada vez <span>mais qualificada</span>. Apenas receber <span>passivamente</span> o conteúdo não é mais suficiente para o bom desempenho dos alunos.</p>
+      <p>Aspectos como inteligência emocional, saúde, planejamento e metodologias de estudo passaram a fazer <span>toda a diferença</span> para aqueles que querem conquistar uma vaga e alcançar a realização.</p>
+      <p>Acreditamos que o caminho para atingir esse objetivo não é somente estudar muito, mas estudar de uma forma inteligente e eficaz. Por meio do Projeto PAS, buscamos propor uma aprendizagem personalizada para que os alunos alcancem os seus objetivos de uma maneira mais <span>inteligente e humana</span>.</p>
 
-      <button class="btn to-form">QUERO ME<br>INSCREVER!</button>
+      <a class="btn to-form js-scroll-trigger" href="#final">QUERO ME<br>INSCREVER!</a>
     </div>
 
     
@@ -96,64 +59,252 @@
 
   <!-- PILARES -->  
   <section id="pilares" class="container text-center">
-    <h2><span style="background-color: #26dbfd">P I L A R E S</span></h2>
+    <h2><span>P I L A R E S</span></h2>
 
     <div class="row">
-      <div class="col-md-4 col-12">
-        <img src="img/icones/aprender-a-aprender.gif" class="img-fluid">
+      <div class="col-md-4 col-11">
+        <img src="img/icones/aprender-a-aprender.gif" class="img-fluid pilar">
         <h3>APRENDER<br>A APRENDER</h3>
-        <p>Muitos estudantes ainda não sabem como estudar, nem quais assuntos são mais relevantes para estudarem. Trabalharemos técnicas de estudo, produtividade e análise de resultados de provas para tornar o estudo mais eficaz e ajuda-los a identificar quais tópicos precisam de mais atenção</p>
+        <p>Muitos alunos ainda não sabem como estudar, nem quais assuntos são mais relevantes para *eles* focarem. Para uma aprendizagem inteligente, trabalharemos técnicas de estudo, produtividade e análise de resultados de provas para ajudá-los a priorizar os conteúdos que mais precisam e otimizar o tempo.</p>
       </div>
 
-      <div class="col-md-4 col-12">
-        <img src="img/icones/inteligencia-emocional.gif" class="img-fluid">
+      <div class="col-md-4 col-11">
+        <img src="img/icones/inteligencia-emocional.gif" class="img-fluid pilar">
         <h3>INTELIGÊNCIA EMOCIONAL</h3>
-        <p>Um dos maiores inimigos do estudante é o dia da prova. Por meio do trabalho de confiança, técnicas para lidar com o nervosismo e práticas da Psicologia Positiva, é possível lidar com a ansiedade na hora da prova de forma mais plena para que isso não afete o seu desempenho</p>
+        <p>O tão esperado dia da prova gera sentimentos que muitos adolescentes têm dificuldade de encarar. Aplicaremos técnicas para lidar com o nervosismo e desenvolver confiança para que o desempenho na prova não seja prejudicado pelas emoções.</p>
       </div>
 
-      <div class="col-md-4 col-12">
-        <img src="img/icones/estrategia-de-prova.gif" class="img-fluid">
+      <div class="col-md-4 col-11">
+        <img src="img/icones/estrategia-de-prova.gif" class="img-fluid pilar">
         <h3>ESTRATÉGIA DE<br>PROVA</h3>
-        <p>Diferentes formas de raciocínio pedem diferentes estratégias de prova e técnicas para resolver problemas. Com auxílio dos professores e por meio de provas semanais, o estudante descobrirá quais são as estratégias que melhor se adequam ao seu estilo</p>
+        <p>Diferentes formas de raciocínio pedem diferentes estratégias de prova e técnicas para resolver problemas. Com auxílio dos professores e por meio de provas semanais, o estudante encontrará as estratégias que melhor se adequam ao seu estilo.</p>
       </div>
 
-      <div class="col-md-4 col-12">
-        <img src="img/icones/redacao.gif" class="img-fluid">
+      <div class="col-md-4 col-11">
+        <img src="img/icones/redacao.gif" class="img-fluid pilar">
         <h3>REDAÇÃO</h3>
-        <p>A habilidade de redigir um texto perpassa estratégias de estruturação, compreensão da banca avaliadora e dos gêneros cobrados por ela, bem como o estímulo à criatividade para desenvolver bons argumentos. Todos esses pontos serão trabalhados durante o curso</p>
+        <p>Muitos alunos não sabem como começar a redação ou não têm argumentos para um tema específico. Saber redigir um texto perpassa estratégias de estruturação, otimização de tempo e o estímulo à criatividade para desenvolver argumentos. Trabalharemos redações semanalmente para aprimorar essa habilidade.</p>
       </div>
 
-      <div class="col-md-4 col-12">
-        <img src="img/icones/proatividade.gif" class="img-fluid">
+      <div class="col-md-4 col-11">
+        <img src="img/icones/proatividade.gif" class="img-fluid pilar">
         <h3>PROATIVIDADE</h3>
-        <p>Um grande desafio para o estudante do Ensino Médio é ter maturidade para compreender as próprias dificuldades e seguir a rotina de estudos. Com auxílio dos professores, ele aprenderá a identificar seus pontos fracos e se responsabilizar pelos seus estudos</p>
+        <p>Um desafio comum entre adolescentes é ter proatividade para seguir uma rotina de estudos e solucionar suas dificuldades. Com ajuda dos professores, eles aplicarão técnicas para planejar os estudos, ferramentas para identificar os impedimentos e melhorar o planejamento toda semana.</p>
       </div>
 
-      <div class="col-md-4 col-12">
-        <img src="img/icones/saude.gif" class="img-fluid">
+      <div class="col-md-4 col-11">
+        <img src="img/icones/saude.gif" class="img-fluid pilar">
         <h3>SAÚDE</h3>
-        <p>A eficácia na concentração, na assimilação de conteúdo e a estabilidade emocional contemplam aspectos como alimentação, saúde e sono. Trabalharemos esses temas para que os estudantes sigam uma rotina mais saudável e melhorem os seus resultados</p>
+        <p>O fato de não priorizar a saúde afeta o desempenho de muitos alunos porque a qualidade dos estudos e a estabilidade emocional envolvem alimentação, atividade física e sono. Eles aprenderão princípios para seguir uma rotina saudável e melhorar a qualidade da aprendizagem.</p>
       </div>
 
     </div>
-  </section> <!-- FIM PROPOSITO -->
+  </section> <!-- FIM PILARES -->
 
-  <!-- COMO FUNCIONA -->
-  <section id="como" class="container text-center">
-    <h2><span>C O M O&nbsp&nbsp&nbspF U N C I O N A</span></h2>
+  <!-- CALENDÁRIO -->
+  <section id="calendario" class="container text-center">
+    <h2><span>C A L E N D Á R I O</span></h2>
 
-    <img src="img/image.png" class="img-fluid">
-  </section> <!-- FIM COMO FUNCIONA -->
+    <div class="row">
+      <div class="col-md-5">
+        <h3>AGOSTO</h3>
+        <table class="table table-borderless">
+          <thead>
+            <tr>
+              <th scope="col">D</th><th scope="col">S</th><th scope="col">T</th><th scope="col">Q</th><th scope="col">Q</th><th scope="col">S</th><th scope="col">S</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td></td><td style="background-color: #FFFFFF; color: #9e9e9e;"></td><td></td><td style="background-color: #FFFFFF; color: #9e9e9e;"></td><td>1</td><td style="background-color: #FFFFFF; color: #9e9e9e;">2</td><td>3</td>
+            </tr>
+            <tr>
+              <td>4</td><td style="background-color: #FFFFFF; color: #9e9e9e;">5</td><td>6</td><td style="background-color: #FFFFFF; color: #9e9e9e;">7</td><td>8</td><td>9</td><td>10</td>
+            </tr>
+            <tr>
+              <td>11</td><td>12</td> <td>13</td> <td>14</td><td>15</td><td>16</td><td>17</td>
+            </tr>
+            <tr>
+              <td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td class="simulado">24</td>
+            </tr>
+            <tr>
+              <td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="col-md-5">
+        <h3>SETEMBRO</h3>
+        <table class="table table-borderless text-center">
+          <thead>
+            <tr>
+              <th scope="col">D</th><th scope="col">S</th><th scope="col">T</th><th scope="col">Q</th><th scope="col">Q</th><th scope="col">S</th><th scope="col">S</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td>
+            </tr>
+            <tr>
+              <td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td>
+            </tr>
+            <tr>
+              <td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td>
+            </tr>
+            <tr>
+              <td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td class="simulado">28</td>
+            </tr>
+            <tr>
+              <td>29</td><td>30</td><td></td><td style="background-color: #FFFFFF; color: #9e9e9e;"></td><td></td><td style="background-color: #FFFFFF; color: #9e9e9e;"></td><td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="col-md-5">
+        <h3>OUTUBRO</h3>
+        <table class="table table-borderless">
+          <thead>
+            <tr>
+              <th scope="col">D</th><th scope="col">S</th><th scope="col">T</th><th scope="col">Q</th><th scope="col">Q</th><th scope="col">S</th><th scope="col">S</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td></td><td style="background-color: #FFFFFF; color: #9e9e9e;"></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td>
+            </tr>
+            <tr>
+              <td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td>
+            </tr>
+            <tr>
+              <td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td>
+            </tr>
+            <tr>
+              <td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td class="simulado">26</td>
+            </tr>
+            <tr>
+              <td>27</td><td>28</td><td>29</td><td>30</td><td>31</td><td style="background-color: #FFFFFF; color: #9e9e9e;"></td><td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="col-md-5">
+        <h3>NOVEMBRO</h3>
+        <table class="table table-borderless">
+          <thead>
+            <tr>
+              <th scope="col">D</th><th scope="col">S</th><th scope="col">T</th><th scope="col">Q</th><th scope="col">Q</th><th scope="col">S</th><th scope="col">S</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td></td><td style="background-color: #FFFFFF; color: #9e9e9e;"></td><td></td><td style="background-color: #FFFFFF; color: #9e9e9e;"></td><td></td><td>1</td><td>2</td>                
+            </tr>
+            <tr>
+              <td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td class="simulado">9</td>
+            </tr>
+            <tr>
+              <td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td class="feriado">15</td><td>16</td>
+            </tr>
+            <tr>
+              <td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td>
+            </tr>
+            <tr>
+              <td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div id="legenda" class="row">
+      <span id="curso">DIAS DE CURSO</span>
+      <span id="simulados">SIMULADOS</span>
+      <span class="feriado">FERIADO</span>
+    </div>
+    
+  </section> <!-- FIM CALENDÁRIO -->
 
   <!-- INFORMACOES -->
-  <section id="como" class="container text-center">
-    <h2>C O M O&nbsp&nbsp&nbspF U N C I O N A</h2>
+  <section id="info" class="container text-center">
+    <div class="row">
+      <div class="col-md-3 col-5">
+        <img id="icone-local" src="img/icones/local.gif" class="img-fluid">
+      </div>
 
-    <img src="img/image.png" class="img-fluid">
+      <div class="col-md-3 col-7" id="local">
+        <h2><span>LOCAL</span></h2>
+        <p><span>CASA THOMAS JEFFERSON</span><br>ASA NORTE<br>SGAN 606 - BLOCO B</p>
+      </div>
+
+      <div class="col-md-3 col-7" id="horario">
+        <h2><span>HORÁRIO</span></h2>
+        <p><span id="align"><span>AULAS:</span> 15h - 18h<br><span>SIMULADOS:</span> 13h - 18h</span></p>
+      </div>
+
+      <div class="col-md-3 col-5">
+        <img id="icone-horario" src="img/icones/horario.gif" class="img-fluid">
+      </div>
+
+    </div>
+
   </section> <!-- FIM INFORMACOES -->
 
+  <!-- INVESTIMENTO + FORM -->
+  <section id="final" class="container text-center">
+    <div class="row">
+      <div class="col-md-6">
+        <h2><span>I N V E S T I M E N T O</span></h2>
+        <img src="img/icones/investimento.gif" class="img-fluid">
+        <h3><span>R$ 4400</span> - em até 6x</h3>
+        <p class="font-weight-bold">Dinheiro, boleto ou transferência</p>
+      </div>
+
+      <!-- FORM -->
+      <div class="col-md-6">
+        <div id="form">
+          <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net" action="https://script.google.com/a/loope.bsb.br/macros/s/AKfycbzmdYWh9APCL-NKR7ba2U008SCYyR2pd3JNuhoa/exec">
+            <h3>GARANTA SUA VAGA</h3>
+
+            <div class="form-elements">
+              <fieldset class="pure-group">
+                <label for="name">Como gosta de ser chamado(a): </label>
+                <input id="name" name="name" required/>
+              </fieldset>
+
+              <fieldset class="pure-group">
+                <label for="telefone">Telefone: </label>
+                <input id="telefone" name="telefone" required placeholder="(61) 99999-9999"></input>
+              </fieldset>
+
+              <fieldset class="pure-group">
+                <label for="email">E-mail:</label>
+                <input id="email" name="email" type="email" value=""
+                required placeholder="nome@email.com"/>
+                <span class="email-invalid" style="display:none">
+                  Insira um e-mail válido!</span>
+              </fieldset>
+
+              <button>ENVIAR</button>
+            </div>
+
+            <div class="thankyou_message" style="display:none;">
+              <h2>Agradecemos pelo interesse! Entraremos em contato com você assim que possível.</h2>
+            </div>
+
+          </form>
+        </div> 
+      </div>
+      
+    </div>
+
+  </section> <!-- FIM INVESTIMENTO + FORM -->
+
+
   <!-- RODAPE -->
-  <footer class="bg-black small text-center text-white-50">
+  <footer class="bg-dark small text-center text-white-50">
     <div class="container">
       <div class="row justify-content-center mb-3">
         <img src="../images/Vertical---Branca.png" width="84" height="50">

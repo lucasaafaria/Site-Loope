@@ -15,11 +15,17 @@ textarea {
   width: 100%;
 }
 
+.container {
+  padding-right: .5em;
+  padding-left: .5em;
+}
+
 h1, h2, h3, h4 {
   font-family: 'Lato', sans-serif;
 }
 
-#arte {
+#arte, #arte div img {
+  margin-top: 3rem;
   margin-left: auto;
   margin-right: auto;
   padding: 0;
@@ -29,22 +35,143 @@ h1, h2, h3, h4 {
   position: relative;
   margin-left: auto;
   margin-right: auto;
-}
+} 
 
 #form {
   margin-right: auto;
 }
 
-#proposito, #pilares, #como {
-  margin-top: 3rem;
+#proposito h2 span, #calendario h2 span, #final h2 span {
+  background-color: #2677fd;
+  color: #FFFFFF;
 }
 
-#proposito .row, #pilares .row {
+#texto-proposito {
+  font-size: 1.125rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+}
+
+#texto-proposito span {
+  font-weight: bold;
+  color: #2677fd;
+}
+
+#proposito, #pilares, #calendario, #info, #final {
+  margin-top: 6rem;
+}
+
+#pilares .row, #calendario .row {
   margin-top: 1.5rem;
   padding: 0 1rem 0 1rem;
 }
 
-button.to-form {
+#pilares h2 span, #info h2 span {
+  color: #FFFFFF;
+  background-color: #26dbfd;
+}
+
+#pilares h3 {
+  color: #26dbfd;
+}
+
+#calendario .table {
+  color: #9e9e9e;
+}
+
+td:nth-child(2), td:nth-child(4), td:nth-child(6), #curso {
+  color: #FFFFFF;
+  background-color: #2677fd;
+}
+
+#calendario .col-md-5 {
+  font-family: 'Lato', sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+
+#calendario h3 {
+  font-weight: bold;
+  color: #000000;
+  margin-top: 1.1rem;
+}
+
+#calendario .row span {
+  font-size: 1.2rem;
+  font-family: 'Lato', sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th {
+  color: #2677fd;
+}
+
+.feriado, td.feriado {
+  background-color: #FFFFFF;
+  color: #FF0000;
+}
+
+td.simulado, #simulados {
+  color: #FFFFFF;
+  background-color: #ff740d;
+}
+
+#local {
+  text-align: left;
+  margin-left: 0;
+}
+
+#local p {
+  padding-left: .5rem;
+  border-left: 3px solid;
+  left: -12px;
+}
+
+#horario p {
+  height: 78px;
+  padding-right: .5rem;
+  border-right: 3px solid;
+  right: -12px;
+}
+
+#align {
+  position: relative;
+  top: 12px;
+}
+
+#local p span, #horario p span span{
+  font-weight: bold;
+}
+
+#local p, #horario p {
+  font-family: 'Lato', sans-serif;
+  margin-top: 1.1rem;
+  border-image: linear-gradient(to bottom, #2677fd, #26dbfd) 1 100%;
+  position: relative;
+}
+
+#horario {
+  text-align: right;
+  margin-right: 0;
+}
+
+#final h2 span {
+  font-size: 1.95rem;
+}
+
+#final img {
+  max-width: 60%;
+}
+
+#final h3 span {
+  color: #2677fd;
+  font-weight: bold;
+}
+
+a.to-form, button {
   border: 0px;
   font-style: italic;
   font-weight: bold;
@@ -55,20 +182,50 @@ button.to-form {
   padding: .4rem 2.2rem .4rem 2.2rem;
   border-radius: 1rem;
   color: #FFFFFF;
+}
+
+a.to-form {
   background-image: linear-gradient(to bottom right, #2677fd, #26dbfd);
 }
 
-button.to-form:hover {
+a.to-form:hover, button:hover {
   color: #26dbfd;
 }
 
 h2 span{
   background-color: #26dbfd;
   color: #FFFFFF;
+}cada vez 
+
+#pilares h3 {
+  color: #26dbfd;
 }
 
-h3 {
-  color: #26dbfd;
+#form {
+  border-radius: 2rem;
+  background-image: linear-gradient(to bottom right, #2677fd, #26dbfd);
+
+}
+
+#name, #email {
+  width: 80%;
+}
+
+label {
+  color: #FFFFFF;
+  text-align: left;
+  padding-left: 3.4rem;
+}
+
+.pure-form .pure-group input:last-child, #email {
+  margin: 5px auto;
+  border-radius: 4px;
+  width: 80%;
+}
+
+.gform h3 {
+  color: #FFFFFF;
+  padding-top: 1rem;
 }
 
 .content-head {
@@ -89,15 +246,61 @@ h3 {
 .button-xlarge {
   font-size: 125%;
 }
+
 button {
-  float: right;
+  position: relative;
+  top: -15px;
+  background-color: #2677fd;
 }
-#name, #email {
-  width: 50%;
+
+fieldset span, .thankyou_message {
+  color: #FFFFFF;
+}
+
+.thankyou_message {
+  font-family: 'Lato', sans-serif;
+  padding-bottom: 1.5rem;
+}
+
+footer {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
 }
 
 @media (max-width: 575.98px) { 
+  #calendario .row span {
+    font-size: .9rem;
+  }
 
+  .pilar {
+    max-width: 240px;;
+  }
+
+  #pilares .row .col-11 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #info .col-6 {
+    padding: 0;
+  }
+
+  #icone-local {
+    position: relative;
+    top: 30px;
+    left: 20px;
+  }
+
+  #horario {
+    margin-top: 2rem;
+  }
+
+  #icone-horario {
+    position: relative;
+    top: 45px;
+    right: 20px;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -111,13 +314,30 @@ button {
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  #logo-loope {
-    top: -65px;
+  .row #logo-loope img.img-fluid {
+    margin-top: 10px;
   }
 }
 
 @media (min-width: 1200px) {
-  #logo-loope {
-    top: -80px;
+  .row #logo-loope img.img-fluid {
+    min-width: 200px;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  #legenda {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #info, #final {
+    margin-top: 6rem;
+  }
+
+  #local p, #horario p {
+    font-size: 1.1rem;
   }
 }
