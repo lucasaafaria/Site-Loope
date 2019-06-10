@@ -24,6 +24,28 @@ h1, h2, h3, h4 {
   font-family: 'Lato', sans-serif;
 }
 
+.text-nowrap {
+  margin-right: auto;
+  margin-left: auto;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2rem;
+  position: relative;
+  top: -41px;
+}
+
+hr {
+  height: 7px;
+  width: 460px;
+  margin-top: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #26dbfd;
+}
+
+.text-nowrap span {
+  font-weight: bold;
+}
+
 #arte, #arte div img {
   margin-top: 3rem;
   margin-left: auto;
@@ -58,7 +80,7 @@ h1, h2, h3, h4 {
   color: #2677fd;
 }
 
-#proposito, #pilares, #calendario, #info, #final {
+#proposito, #pilares, #calendario, #info {
   margin-top: 6rem;
 }
 
@@ -128,6 +150,15 @@ td.simulado, #simulados {
   padding-left: .5rem;
   border-left: 3px solid;
   left: -12px;
+}
+
+#horario {
+  margin-left: auto;
+}
+
+#info .col-5 {
+  padding: 0;
+  margin-right: auto;
 }
 
 #horario p {
@@ -269,6 +300,20 @@ footer {
 }
 
 @media (max-width: 575.98px) { 
+  hr {
+    width: 342px;
+
+  }
+
+  .text-nowrap {
+    font-size: .9rem;
+    padding: .2rem;
+  }
+
+  #arte div img {
+    margin-top: 0;
+  }
+
   #calendario .row span {
     font-size: .9rem;
   }
@@ -282,6 +327,10 @@ footer {
     margin-right: auto;
   }
 
+  #info, #final {
+    margin-top: 3rem;
+  }
+
   #info .col-6 {
     padding: 0;
   }
@@ -293,13 +342,17 @@ footer {
   }
 
   #horario {
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
 
   #icone-horario {
     position: relative;
     top: 45px;
     right: 20px;
+  }
+
+  #form {
+    margin-top: 2rem;
   }
 }
 
@@ -324,6 +377,12 @@ footer {
     min-width: 200px;
     margin-top: 10px;
   }
+
+  #icone-horario {
+    position: relative;
+    top: -50px;
+    left: -15px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -333,7 +392,7 @@ footer {
     margin-right: auto;
   }
 
-  #info, #final {
+  #info, {
     margin-top: 6rem;
   }
 
