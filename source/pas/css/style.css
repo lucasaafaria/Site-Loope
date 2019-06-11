@@ -80,7 +80,7 @@ hr {
   color: #2677fd;
 }
 
-#proposito, #pilares, #calendario, #info {
+#proposito, #pilares, #calendario, #info, #final {
   margin-top: 6rem;
 }
 
@@ -132,8 +132,8 @@ th {
 }
 
 .feriado, td.feriado {
-  background-color: #FFFFFF;
-  color: #FF0000;
+  background-color: #ffc81a;
+  color: #FFFFFF;
 }
 
 td.simulado, #simulados {
