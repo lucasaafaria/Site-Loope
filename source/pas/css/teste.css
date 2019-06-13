@@ -232,7 +232,6 @@ span.feriado {
 #form {
   border-radius: 2rem;
   background-image: linear-gradient(to bottom right, #2677fd, #26dbfd);
-
 }
 
 #name, #email {
@@ -451,13 +450,57 @@ footer hr {
     top: 35px;
     left: 75px;
   }
+
+  #form {
+    width: 90%;
+  }
 }
 
 /* ------------------ LARGE DESKTOPS - XL ----------------- */
 
 @media (min-width: 1200px) {
+  #arte hr {
+    width: 444px;
+  }
+  
+  #texto-arte p {
+    font-size: 1.45rem;
+    top: -45px;
+  }
+  
+  #logo-loope {
+    max-width: 20%;
+  }
+
   #texto-proposito {
     width: 60%;
+  }
+
+  #local {
+    padding-right: 0;
+  }
+
+  #horario {
+    padding-left: 0;
+  }
+
+  #horario p {
+    height: 72px;
+    padding-top: 12px;
+  }
+
+  #icone-local {
+    top: 35px;
+    left: 90px;
+  }
+
+  #icone-horario {
+    width: 80%;
+    top: 15px;
+  }
+
+  #form {
+    width: 85%;
   }
 }
 
