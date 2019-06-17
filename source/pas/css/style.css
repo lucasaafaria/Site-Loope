@@ -211,6 +211,23 @@ span.feriado {
   font-weight: bold;
 }
 
+/* ------------------ VÍDEO ----------------- */
+
+#video {
+  margin-top: 4rem;
+}
+
+#video h2 span {
+  color: #FFFFFF;
+  background-color: #26dbfd;
+}
+
+iframe {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px;
+}
+
 /* ------------------ INVESTIMENTO + FORM ----------------- */
 
 #final {
