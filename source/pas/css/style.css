@@ -31,10 +31,28 @@ hr {
   width: 60%;
 }
 
+/* ------------------ VÍDEO ----------------- */
+
+#video {
+  margin-top: 4rem;
+}
+
+#video h2 span {
+  color: #FFFFFF;
+  background-color: #26dbfd;
+}
+
+iframe {
+  margin-top: 1.2rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px;
+}
+
 /* ------------------ PROPÓSITO ----------------- */
 
 #proposito {
-  margin-top: 3rem;
+  margin-top: 4rem;
 }
 
 #proposito h2 span {
@@ -151,10 +169,38 @@ td.simulado, #simulados {
 
 span.feriado {
   margin-right: auto;
+}/* ------------------ VÍDEO ----------------- */
+
+#video {
+  margin-top: 4rem;
 }
 
-#legenda {
-  margin-top: 1rem;
+#video h2 span {
+  color: #FFFFFF;
+  background-color: #26dbfd;
+}
+
+iframe {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px;
+}
+
+/* ------------------ VÍDEO ----------------- */
+
+#video {
+  margin-top: 4rem;
+}
+
+#video h2 span {
+  color: #FFFFFF;
+  background-color: #26dbfd;
+}
+
+iframe {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px;
 }
 
 /* ------------------ LOCAL E HORARIO ----------------- */
@@ -211,22 +257,6 @@ span.feriado {
   font-weight: bold;
 }
 
-/* ------------------ VÍDEO ----------------- */
-
-#video {
-  margin-top: 4rem;
-}
-
-#video h2 span {
-  color: #FFFFFF;
-  background-color: #26dbfd;
-}
-
-iframe {
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 10px;
-}
 
 /* ------------------ INVESTIMENTO + FORM ----------------- */
 
@@ -381,11 +411,44 @@ footer hr {
   #final h3 {
     font-size: 1.6rem;
   }
+
+  #pilares img {
+    width: 210px;
+    height: 144px;
+  }
 }
 
 /* ------------------ LANDSCAPE MOBILE - S ----------------- */
 
 @media (min-width: 576px) and (max-width: 767.98px) {
+  #logo-loope {
+    height: 52px;
+    width: 215px;
+  }
+
+  #icone-local {
+    top: 35px;
+    left: 90px;
+  }
+
+  #icone-horario {
+    width: 80%;
+    top: 15px;
+  }
+
+  #horario {
+    margin-top: 1.2rem;
+  }
+
+  #horario p {
+    height: 57px;
+    padding-top: 7px;
+  }
+
+  #pilares img {
+    width: 50%;
+    height: auto;
+  }
 }
 
 /* ------------------ TABLETS - MD ----------------- */
@@ -399,9 +462,10 @@ footer hr {
     font-size: 1.45rem;
     top: -45px;
   }
-  
+
   #logo-loope {
-    max-width: 30%;
+    height: 60px;
+    width: 230px;
   }
 
   #calendario .col-md-5 {
@@ -454,7 +518,8 @@ footer hr {
   }
   
   #logo-loope {
-    max-width: 30%;
+    height: 60px;
+    width: 230px;
   }
   
   #texto-proposito {
